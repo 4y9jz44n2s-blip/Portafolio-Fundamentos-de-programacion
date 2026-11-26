@@ -1,0 +1,102 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMLfgRu//T1SNEZUojFSh4G",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/4y9jz44n2s-blip/Portafolio-Fundamentos-de-programacion/blob/main/ejercicio%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "f546bb9a",
+        "outputId": "c6ddf25b-db6e-4c95-aba1-defe131b7315"
+      },
+      "source": [
+        "precio = float(input(\"Ingresa el precio del producto: $\"))\n",
+        "porcentaje_descuento = float(input(\"Ingresa el porcentaje de descuento: \"))\n",
+        "\n",
+        "descuento = precio * porcentaje_descuento / 100\n",
+        "precio_final = precio - descuento\n",
+        "\n",
+        "print(f\"Valor del descuento: ${descuento:.2f}\")\n",
+        "print(f\"Precio final: ${precio_final:.2f}\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa el precio del producto: $500\n",
+            "Ingresa el porcentaje de descuento: 20\n",
+            "Valor del descuento: $100.00\n",
+            "Precio final: $400.00\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7d0758fb",
+        "outputId": "abf801f1-a82a-4174-e29a-cdb6c3031500"
+      },
+      "source": [
+        "import math\n",
+        "\n",
+        "radianes = float(input(\"Ingresa la cantidad de radianes: \"))\n",
+        "\n",
+        "grados = radianes * 180 / math.pi\n",
+        "\n",
+        "print(f\"Equivalente en grados: {grados:.2f}°\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa la cantidad de radianes: 3.141592653589793\n",
+            "Equivalente en grados: 180.00°\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "6Zt9V3OMtIrm"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
