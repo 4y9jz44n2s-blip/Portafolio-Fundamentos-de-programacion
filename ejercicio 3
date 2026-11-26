@@ -1,0 +1,60 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP5kSUDyXhuJq1zrY1ZMHYu",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/4y9jz44n2s-blip/Portafolio-Fundamentos-de-programacion/blob/main/ejercicio%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UpFETv5PMwJv",
+        "outputId": "e75e3df9-ddb9-406e-f3cf-86128f95a6f7"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Ingresa el precio del producto: $1000\n"
+          ]
+        }
+      ],
+      "source": [
+        "precio = float(input(\"Ingresa el precio del producto: $\"))\n",
+        "porcentaje_descuento = float(input(\"Ingresa el porcentaje de descuento: \"))\n",
+        "\n",
+        "descuento = precio * porcentaje_descuento / 100\n",
+        "precio_final = precio - descuento\n",
+        "20%\n",
+        "print(\"Descuento aplicado: $\", round(descuento, 2))\n",
+        "print(\"Precio final: $\", round(precio_final, 2))"
+      ]
+    }
+  ]
+}
