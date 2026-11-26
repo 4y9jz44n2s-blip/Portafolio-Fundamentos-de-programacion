@@ -1,0 +1,74 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPdKAZKk1TkKcOtAXcbF2JC",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/4y9jz44n2s-blip/Portafolio-Fundamentos-de-programacion/blob/main/ejercicio%205\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 471
+        },
+        "id": "v2Uo7FBJQvzq",
+        "outputId": "c5d403c8-d791-4b60-9fc1-54c7e811715e"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Ingresa el precio del producto: $1000\n",
+            "Ingresa el porcentaje de descuento: 20%\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "ValueError",
+          "evalue": "could not convert string to float: '20%'",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_4683/2596685015.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mprecio\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mfloat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Ingresa el precio del producto: $\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mporcentaje_descuento\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mfloat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Ingresa el porcentaje de descuento: \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0mdescuento\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mprecio\u001b[0m \u001b[0;34m*\u001b[0m \u001b[0mporcentaje_descuento\u001b[0m \u001b[0;34m/\u001b[0m \u001b[0;36m100\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mprecio_final\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mprecio\u001b[0m \u001b[0;34m-\u001b[0m \u001b[0mdescuento\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mValueError\u001b[0m: could not convert string to float: '20%'"
+          ]
+        }
+      ],
+      "source": [
+        "precio = float(input(\"Ingresa el precio del producto: $\"))\n",
+        "porcentaje_descuento_str = input(\"Ingresa el porcentaje de descuento: \")\n",
+        "porcentaje_descuento = float(porcentaje_descuento_str.replace('%', ''))\n",
+        "\n",
+        "descuento = precio * porcentaje_descuento / 100\n",
+        "precio_final = precio - descuento\n",
+        "\n",
+        "print(\"Descuento aplicado: $\", round(descuento, 2))\n",
+        "print(\"Precio final: $\", round(precio_final, 2))"
+      ]
+    }
+  ]
+}
